@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glass and subtle card styles */
+.card-subtle {
+  @apply bg-white border border-slate-200/80 rounded-xl shadow-sm transition-all;
+}
+
+.card-subtle:hover {
+  @apply border-slate-300 shadow;
+}
+
+.badge-malignant {
+  @apply bg-rose-50 text-rose-700 border border-rose-200;
+}
+
+.badge-benign {
+  @apply bg-emerald-50 text-emerald-700 border border-emerald-200;
+}
